@@ -7,3 +7,6 @@ const port = 8000;
 
 app.use(bodyParser.json());
 app.use(cors());
+
+app.get("/", (res, req) => res.send("Hello Node bihs"));
+app.listen(port);
